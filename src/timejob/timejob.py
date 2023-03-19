@@ -13,7 +13,7 @@ def timethis(func):
         return result
     return wrapper
 
-def timedef(func):
+def timejob(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
         start = time.time()
